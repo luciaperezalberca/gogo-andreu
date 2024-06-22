@@ -5,52 +5,53 @@ import YoutubeIcon from '../components/icons/Youtube.astro';
 ---
 
 <header>
-        <nav class="text-md flex justify-between items-center md:gap-5 opacity-80 m-0 md:mt-7 sm:mb-10 lg:mb-0 px-5 md:px-15 lg:px-28 xl:px-32 relative">
-            <a href="/">
-                <img
-                    class="w-auto h-20 sm:h-24 md:h-26 lg:h-32 lg:mb-8 hover:opacity-85" 
-                    src="/images/logo.png" 
-                    alt="imagen de logo"
-                />
-            </a>
+    <nav class="text-md flex justify-between items-center md:gap-5 opacity-80 m-0 md:mt-7 sm:mb-10 lg:mb-0 px-5 md:px-15 lg:px-28 xl:px-32 relative">
+        <a href="/">
+            <img
+                class="w-auto h-20 sm:h-24 md:h-26 lg:h-32 lg:mb-8 hover:opacity-85" 
+                src="/images/logo.png" 
+                alt="imagen de logo"
+            />
+        </a>
 
-            <!--menu hamburguesa -->
-            <div class="hidden sm:flex gap-x-5 lg:gap-x-10 text-md mb-5 sm:mt-4 sm:mb-2 lg:mt-0">
-                <a href="/#obras" class="hover:opacity-50 hover:scale-110"> Obras </a>
-                <a href="/#biografia" class="hover:opacity-50 hover:scale-110"> Biografía </a>
-                <a href="/#recuerdos" class="hover:opacity-50 hover:scale-110"> Recuerdos </a>
-                <a href="/#premios" class="hover:opacity-50 hover:scale-110"> Premios </a>       
-            </div>
-            <div class="text-2xl cursor-pointer block sm:hidden" id="menu-icon">
-                &#9776;
-            </div>
-            <div class="flex gap-2">
-                <a class="rounded-full flex justify-center items-center px-1 hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@GogoAndreuWeb">
-                    <YoutubeIcon class="size-6 md:size-8 hover:opacity-50" />
-                </a>
-                <a class="rounded-full flex justify-center items-center hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
-                    <InstagramIcon class="size-6 md:size-8 hover:opacity-50" />
-                </a>
-                <a class="rounded-full flex justify-center items-center hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/Gogo-Andreu/100063636157481/">
-                    <FacebookIcon class="size-6 md:size-8 hover:opacity-50" />
-                </a>
-            </div>     
-    
-            <!-- Menu hamburguesa -->
-            <div class="absolute top-full left-0 w-full bg-white flex-col gap-4 hidden" id="mobile-menu">
-                <a href="/#obras" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Obras </a>
-                <a href="/#biografia" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Biografía </a>
-                <a href="/#recuerdos" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Recuerdos </a>
-                <a href="/#premios" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Premios </a>
-            </div>
-        </nav>
+        <!--menu hamburguesa -->
+        <div class="hidden sm:flex gap-x-5 lg:gap-x-10 text-md mb-5 sm:mt-4 sm:mb-2 lg:mt-0">
+            <a href="/#obras" class="hover:opacity-50 hover:scale-110"> Obras </a>
+            <a href="/#biografia" class="hover:opacity-50 hover:scale-110"> Biografía </a>
+            <a href="/#recuerdos" class="hover:opacity-50 hover:scale-110"> Recuerdos </a>
+            <a href="/#premios" class="hover:opacity-50 hover:scale-110"> Premios </a>       
+        </div>
+        <div class="text-2xl cursor-pointer block sm:hidden" id="menuIcon">
+            &#9776;
+        </div>
+        <div class="flex gap-2">
+            <a class="rounded-full flex justify-center items-center px-1 hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@GogoAndreuWeb">
+                <YoutubeIcon class="size-6 md:size-8 hover:opacity-50" />
+            </a>
+            <a class="rounded-full flex justify-center items-center hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
+                <InstagramIcon class="size-6 md:size-8 hover:opacity-50" />
+            </a>
+            <a class="rounded-full flex justify-center items-center hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/Gogo-Andreu/100063636157481/">
+                <FacebookIcon class="size-6 md:size-8 hover:opacity-50" />
+            </a>
+        </div>     
+
+        <!-- Menu hamburguesa -->
+        <div class="absolute top-full left-0 w-full bg-white flex-col gap-4 hidden" id="mobileMenu">
+            <a href="/#obras" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Obras </a>
+            <a href="/#biografia" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Biografía </a>
+            <a href="/#recuerdos" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Recuerdos </a>
+            <a href="/#premios" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Premios </a>
+        </div>
+    </nav>
 </header>
-    
+
 <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuIcon = document.getElementById('menu-icon');
-            const mobileMenu = document.getElementById('mobile-menu');
-        
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuIcon = document.getElementById('menuIcon');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (menuIcon && mobileMenu) {
             menuIcon.addEventListener('click', function () {
                 if (mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.remove('hidden');
@@ -60,6 +61,8 @@ import YoutubeIcon from '../components/icons/Youtube.astro';
                     mobileMenu.classList.remove('flex');
                 }
             });
-        });
+        }
+    });
 </script>
+
     
