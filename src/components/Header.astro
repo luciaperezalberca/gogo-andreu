@@ -5,34 +5,34 @@ import YoutubeIcon from '../components/icons/Youtube.astro';
 ---
 
 <header>
-    <nav class="text-md flex justify-between items-center md:gap-5 opacity-80 m-0 md:mt-7 sm:mb-10 lg:mb-0 px-5 md:px-15 lg:px-28 xl:px-32 relative">
+    <nav class="text-md flex justify-between items-center md:gap-5 opacity-80 mt-2 sm:mt-5 md:mt-7 sm:mb-10 lg:mb-0 px-5 md:px-20 lg:px-28 xl:px-44 relative text-primary-gray">
         <a href="/">
             <img
-                class="w-auto h-20 sm:h-24 md:h-26 lg:h-32 lg:mb-8 hover:opacity-85" 
+                class="w-auto h-24 sm:h-26 md:h-28 lg:h-36 lg:mb-8 hover:opacity-85" 
                 src="/images/logo.png" 
                 alt="imagen de logo"
             />
         </a>
 
         <!--menu hamburguesa -->
-        <div class="hidden sm:flex gap-x-5 lg:gap-x-10 text-md mb-5 sm:mt-4 sm:mb-2 lg:mt-0">
+        <div class="hidden sm:flex gap-x-5 lg:gap-x-10 text-md md:text-lg">
             <a href="/#obras" class="hover:opacity-50 hover:scale-110"> Obras </a>
             <a href="/#biografia" class="hover:opacity-50 hover:scale-110"> Biografía </a>
             <a href="/#recuerdos" class="hover:opacity-50 hover:scale-110"> Recuerdos </a>
             <a href="/#premios" class="hover:opacity-50 hover:scale-110"> Premios </a>       
         </div>
-        <div class="text-2xl cursor-pointer block sm:hidden" id="menuIcon">
+        <div class="text-3xl cursor-pointer block sm:hidden" id="menuIcon">
             &#9776;
         </div>
-        <div class="flex gap-2">
+        <div class="flex">
             <a class="rounded-full flex justify-center items-center px-1 hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@GogoAndreuWeb">
-                <YoutubeIcon class="size-6 md:size-8 hover:opacity-50" />
+                <YoutubeIcon class="size-8 md:size-10 hover:opacity-50" />
             </a>
             <a class="rounded-full flex justify-center items-center hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/">
-                <InstagramIcon class="size-6 md:size-8 hover:opacity-50" />
+                <InstagramIcon class="size-8 md:size-10 hover:opacity-50" />
             </a>
             <a class="rounded-full flex justify-center items-center hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/Gogo-Andreu/100063636157481/">
-                <FacebookIcon class="size-6 md:size-8 hover:opacity-50" />
+                <FacebookIcon class="size-8 md:size-10 hover:opacity-50" />
             </a>
         </div>     
 
