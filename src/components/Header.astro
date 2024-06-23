@@ -37,11 +37,11 @@ import YoutubeIcon from '../components/icons/Youtube.astro';
         </div>     
 
         <!-- Menu hamburguesa -->
-        <div class="absolute top-full left-0 w-full bg-white flex-col gap-4 hidden" id="mobileMenu">
-            <a href="/#obras" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Obras </a>
-            <a href="/#biografia" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Biografía </a>
-            <a href="/#recuerdos" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Recuerdos </a>
-            <a href="/#premios" class="block py-2 px-4 hover:opacity-50 hover:scale-110"> Premios </a>
+        <div class="absolute top-full left-0 w-full bg-white flex-col gap-4 hidden bg-[#f0f0f0]" id="mobileMenu">
+            <a href="/#obras" class="block py-2 px-4 hover:opacity-50 hover:scale-110 font-bold text-center text-xl"> Obras </a>
+            <a href="/#biografia" class="block py-2 px-4 hover:opacity-50 hover:scale-110 font-bold text-center text-xl"> Biografía </a>
+            <a href="/#recuerdos" class="block py-2 px-4 hover:opacity-50 hover:scale-110 font-bold text-center text-xl"> Recuerdos </a>
+            <a href="/#premios" class="block py-2 px-4 hover:opacity-50 hover:scale-110 font-bold text-center text-xl"> Premios </a>
         </div>
     </nav>
 </header>
@@ -50,6 +50,7 @@ import YoutubeIcon from '../components/icons/Youtube.astro';
     document.addEventListener('DOMContentLoaded', function () {
         const menuIcon = document.getElementById('menuIcon');
         const mobileMenu = document.getElementById('mobileMenu');
+       
 
         if (menuIcon && mobileMenu) {
             menuIcon.addEventListener('click', function () {
@@ -60,6 +61,14 @@ import YoutubeIcon from '../components/icons/Youtube.astro';
                     mobileMenu.classList.add('hidden');
                     mobileMenu.classList.remove('flex');
                 }
+            });
+
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                });
             });
         }
     });
