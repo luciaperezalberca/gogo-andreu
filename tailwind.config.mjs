@@ -5,12 +5,14 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'hero-image': "url('/images/fondo-gogo.png')",
+				'hero-image': "url('/images/teatro-gris.webp')",
 				'biography-image': "url('/images/biography-image.png')",
 			},
 			colors: {
 				'primary-gray': '#343434',
 				'primary-wine': '#821C16',
+				'secondary-gray': '#4C4C4C',
+				'secondary-wine': '#56110D',
 			},
 		},
 	},

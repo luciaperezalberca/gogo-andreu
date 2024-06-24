@@ -5,7 +5,7 @@ import YoutubeIcon from '../components/icons/Youtube.astro';
 ---
 
 <header>
-    <nav class="text-md flex justify-between items-center md:gap-5 opacity-80 mt-2 sm:mt-5 md:mt-7 sm:mb-10 lg:mb-0 px-5 md:px-20 lg:px-28 xl:px-44 relative text-primary-gray">
+    <nav class="text-md flex justify-between items-center md:gap-5 opacity-80 mt-2 sm:mt-5 md:mt-7 sm:mb-10 lg:mb-0 px-5 md:px-20 lg:px-28 xl:px-44 relative">
         <a href="/">
             <img
                 class="w-auto h-24 sm:h-26 md:h-28 lg:h-36 lg:mb-8 hover:opacity-85" 
@@ -15,16 +15,16 @@ import YoutubeIcon from '../components/icons/Youtube.astro';
         </a>
 
         <!--menu hamburguesa -->
-        <div class="hidden sm:flex gap-x-5 lg:gap-x-10 text-md md:text-lg">
+        <div class="hidden sm:flex gap-x-5 lg:gap-x-10 text-md md:text-lg text-black">
             <a href="/#obras" class="hover:opacity-50 hover:scale-110"> Obras </a>
             <a href="/#biografia" class="hover:opacity-50 hover:scale-110"> Biografía </a>
             <a href="/#recuerdos" class="hover:opacity-50 hover:scale-110"> Recuerdos </a>
             <a href="/#premios" class="hover:opacity-50 hover:scale-110"> Premios </a>       
         </div>
-        <div class="text-3xl cursor-pointer block sm:hidden" id="menuIcon">
+        <div class="text-3xl cursor-pointer block sm:hidden text-primary-gray" id="menuIcon">
             &#9776;
         </div>
-        <div class="flex">
+        <div class="flex text-primary-gray">
             <a class="rounded-full flex justify-center items-center px-1 hover:scale-110" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@GogoAndreuWeb">
                 <YoutubeIcon class="size-8 md:size-10 hover:opacity-50" />
             </a>

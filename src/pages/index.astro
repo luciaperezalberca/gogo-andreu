@@ -6,14 +6,17 @@ import Layout from '../layouts/Layout.astro';
 	title="Sitio web conmemorativo del artista Gogó Andreu"
 	description="Te invitamos a recordar al gran artista Gogó Andreu a través de su biografia, imagenes y principales obras.">
 	<main class="w-full">
-		<section>
-			<div class="py-12 px-10 md:pl-20 lg:pl-36 xl:pl-52 bg-hero-image bg-right h-5/6 bg-contain bg-no-repeat text-pretty">
-				<h1 class="text-4xl md:text-7xl font-bold mb-1 text-primary-gray"> Una vida </h1>
-				<h2 class="text-2xl md:text-6xl mb-4 text-primary-gray font-regular"> dedicada al Espectáculo </h2>
-				<p class="w-full md:w-1/2 mb-12 text-primary-gray"> « Habré tenido suerte, condiciones, no sé... hice de todo un poco, y a veces me fue bien. De guitarrista, de bailarín, de comodín. Compuse temas, varios poemas, pero hambre -lo que se dice hambre, hambre, hambre- nunca pasé. »</p>
-				<a href="/#biografia" class="bg-primary-wine uppercase py-2 px-5 text-nowrap md:px-10 rounded-2xl hover:opacity-90 text-white tracking-wider hover:cursor-pointer"> Biografia completa </a>
-			</div>
-		</section>
+		<div class="hero min-h-screen" style="background-image: url('/images/teatro-gris.webp');">
+  			<div class="hero-overlay bg-opacity-10"></div>
+  			<div class="hero-content text-neutral-content text-center">
+    				<div class="max-w-md">
+      					<h1 class="text-4xl font-bold">Su recorrido</h1>
+					<h2 class="mb-5 text-2xl">en el mundo del <span class="font-bold text-5xl">Espectáculo</span></h2>
+      					<p class="mb-10"> Habré tenido suerte, condiciones, no sé... hice de todo un poco, y a veces me fue bien. De guitarrista, de bailarín, de comodín. Compuse temas, varios poemas, pero hambre -lo que se dice hambre, hambre, hambre- nunca pasé. </p>
+					<a href="/#biografia" class="bg-primary-wine uppercase py-2 px-5 text-nowrap md:px-10 rounded-2xl hover:bg-secondary-wine text-white tracking-wider hover:cursor-pointer"> Biografia completa </a>
+    				</div>
+  			</div>
+		</div>
 		<div class="bg-[#f0e3e3] flex flex-col sm:flex-row px-10 py-20 gap-20 sm:gap-10 lg:px-40 lg:py-28" id="obras">
 			<div class="w-full md:w-1/3"> 
 				<h2 class="font-bold text-3xl mb-5 text-primary-gray">Televisión</h2>
@@ -81,23 +84,23 @@ import Layout from '../layouts/Layout.astro';
 			<h2 class="font-bold text-3xl text-primary-wine mb-5">Mensajes de Amigos y Familia</h2>
 			<div class="py-8"
 				<p class="w-full md:text-md text-primary-gray">« Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore  sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. »</p>
-				<p class="font-bold text-end italic text-lg pr-3"> Carmen Castro </p>
+				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Carmen Castro </p>
 			</div>
 			<div class="py-8"
 				<p class="w-full md:text-md text-primary-gray">« Lorem ipsum adipiscing elit, sed do eiusmod Lorem ipsum adipiscing elit, sed do eiu Lorem Lorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiu ipsum adipiscing elit, sed do eiu tempor incididunt ut labore et dolore magna aliqua. »</p>
-				<p class="font-bold text-end italic text-lg pr-3"> Camila Zapata </p>
+				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Camila Zapata </p>
 			</div>
 			<div class="py-8"
 				<p class="w-full md:text-md text-primary-gray">« Loremre et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore  sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. »</p>
-				<p class="font-bold text-end italic text-lg pr-3"> Emilio Rodriguez Goméz </p>
+				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Emilio Rodriguez Goméz </p>
 			</div>
 			<div class="py-8"
 				<p class="w-full md:text-md text-primary-gray">« Lorem ipsum dolor sit amet, Lorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum Lorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuadipiscing elit, sed do eiuconsectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. »</p>
-				<p class="font-bold text-end italic text-lg pr-3"> Familia Ronchetti </p>
+				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Familia Ronchetti </p>
 			</div>
 			<div class="py-8"
 				<p class="w-full md:text-md text-primary-gray">« Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore  sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. »</p>
-				<p class="font-bold text-end italic text-lg pr-3"> Gloria Colombres </p>
+				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Gloria Colombres </p>
 			</div>
 		</div>
 	</main>
