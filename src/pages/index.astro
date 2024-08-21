@@ -15,33 +15,19 @@ import Layout from '../layouts/Layout.astro';
       					<h1 class="text-4xl">Su recorrido</h1>
 					<h2 class="mb-5 text-4xl">en el mundo del <span class="font-bold text-4xl">Espectáculo</span></h2>
       					<p class="mb-10"> Habré tenido suerte, condiciones, no sé... hice de todo un poco, y a veces me fue bien. De guitarrista, de bailarín, de comodín. Compuse temas, varios poemas, pero hambre -lo que se dice hambre, hambre, hambre- nunca pasé. </p>
-					<a href="/#biografia" class="bg-primary-wine uppercase py-2 px-5 text-nowrap md:px-10 rounded-2xl hover:bg-secondary-wine text-white tracking-wider hover:cursor-pointer"> Biografia completa </a>
+					<a href="/#biografia" class="bg-primary-wine uppercase py-2 px-5 text-nowrap md:px-10 rounded-xl hover:bg-secondary-wine text-white tracking-wider hover:cursor-pointer"> Biografia completa </a>
     				</div>
   			</div>
 		</div>
 
-		<!-- esta parte es para sacar
-		<div class="bg-[#f0e3e3] flex flex-col sm:flex-row px-10 py-20 gap-20 sm:gap-10 lg:px-40 lg:py-28" id="obras">
-			<div class="w-full md:w-1/3"> 
-				<h2 class="font-bold text-3xl mb-5 text-primary-gray">Televisión</h2>
-				<img src="images/television.webp" alt="imagen del actor gogo andreu con su hermano bailando" class="max-h-60 sm:w-full"> 
-				<p class="my-5 text-primary-gray">Gogó Andreu dejó una marca imborrable en la televisión, participando en series y programas que se convirtieron en favoritos del público. Su capacidad para conectar con los espectadores y su talento para encarnar una variedad de personajes hicieron de su carrera televisiva un capítulo inolvidable en su vida artística.</p>
-			</div>
-			<div class="w-full md:w-1/3"> 
-				<h2 class="font-bold text-3xl mb-5 text-primary-gray">Teatro</h2> 
-				<img src="images/teatro.webp" alt="imagen del actor gogo andreu junto con el elenco de la obra" class="max-h-60 sm:w-full">
-				<p class="my-5 text-primary-gray">El teatro fue el escenario donde perfeccionó su arte y mostró su versatilidad como intérprete. A lo largo de su carrera, su presencia en el escenario dejó una huella indeleble, conquistando los corazones del público con cada actuación. En esta sección, revivimos los momentos más brillantes de su trayectoria teatral, recordando su dedicación y pasión.</p>
-			</div>
-		</div>	 -->
-
 		<!-- seccion obras -->
 		<!-- cine -->
-		<div class="px-10 bg-[#f0e3e3] pt-20" id="obras">
+		<div class="px-10 bg-light-wine pt-20" id="obras">
 
 			<!-- comienzo seccion cine -->
 			<div class="flex flex-col items-center w-full">
 				<h2 class="font-medium text-4xl text-primary-gray text-center pb-10"> En la <span class="text-primary-wine">Gran Pantalla</span></h2>
-				<img src="images/cine.webp" alt="imagen del actor gogo andreu sonriendo" class="mb-10 rounded-lg w-60 md:w-96 ">
+				<img src="images/cine.webp" alt="imagen del actor gogo andreu sonriendo" class="mb-10 w-60 md:w-96 ">
 			</div>
 			
 			<!-- texto de seccion cine -->
@@ -629,12 +615,12 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<!-- television -->
-		<div class="px-10 mb-20 pt-20">
+		<div class="px-2 sm:px-10 mb-20 pt-20">
 
 			<!-- comienzo seccion television -->
 			<div class="flex flex-col items-center w-full">
 				<h2 class="font-medium text-4xl text-primary-gray text-center pb-10"> Trayectoria en <span class="text-primary-wine">Televisión</span></h2>
-				<img src="images/television.webp" alt="imagen del actor gogo andreu con su hermano bailando" class="mb-10 rounded-lg w-60 md:w-96 ">
+				<img src="images/television.webp" alt="imagen del actor gogo andreu con su hermano bailando" class="mb-10 w-60 md:w-96 ">
 			</div>
 			
 			<!-- texto de seccion television -->
@@ -646,7 +632,7 @@ import Layout from '../layouts/Layout.astro';
 		
 			<!-- cards para seccion television -->
 			<div class="flex flex-col md:flex-row justify-center gap-5 items-center flex-wrap">
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/UBJM7Ie37lw"
@@ -660,7 +646,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Estudio A
-							<div class="badge bg-[#f0e3e3]">1970</div>
+							<div class="badge bg-light-wine">1970</div>
 						</h2>
 						<p>Programa de televisión - Volver</p>
 						<div class="card-actions justify-end">
@@ -668,7 +654,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/kLXtUItj_rM"
@@ -682,7 +668,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Función Privada
-							<div class="badge bg-[#f0e3e3]">1996</div>
+							<div class="badge bg-light-wine">1996</div>
 						</h2>
 						<p>Canal Space</p>
 						<div class="card-actions justify-end">
@@ -690,7 +676,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/YlUIa1zK8dA"
@@ -704,7 +690,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Badía & Compañía
-							<div class="badge bg-[#f0e3e3]">1996</div>
+							<div class="badge bg-light-wine">1996</div>
 						</h2>
 						<p>Programa de televisión - Canal 13</p>
 						<div class="card-actions justify-end">
@@ -712,7 +698,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/SdHqbkfRAak"
@@ -726,7 +712,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Muñeca Brava
-							    <div class="badge bg-[#f0e3e3]">1998</div>
+							    <div class="badge bg-light-wine">1998</div>
 						  </h2>
 						<p>Dirección: Hernán Abrahamnsohn</p>
 						<div class="card-actions justify-end">
@@ -734,7 +720,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/3VUbx0XsK0U"
@@ -748,7 +734,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Los Fiscales
-							<div class="badge bg-[#f0e3e3]">1998</div>
+							<div class="badge bg-light-wine">1998</div>
 						</h2>
 						<p>Dirección: Alejandro Mac</p>
 						<div class="card-actions justify-end">
@@ -756,7 +742,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/iDv00Jz5hZQ"
@@ -777,7 +763,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/9dVUPMxQNuw"
@@ -791,7 +777,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Todo teatro
-							<div class="badge bg-[#f0e3e3]">1998</div>
+							<div class="badge bg-light-wine">1998</div>
 						</h2>
 						<p>Programa de televisión - ATC</p>
 						<div class="card-actions justify-end">
@@ -799,7 +785,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/uI5ltVA_i8E"
@@ -820,7 +806,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/sTZVLc0HeH0"
@@ -834,7 +820,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							83° Aniversario
-							<div class="badge bg-[#f0e3e3]">2002</div>
+							<div class="badge bg-light-wine">2002</div>
 						</h2>
 						<p>TN Show</p>
 						<div class="card-actions justify-end">
@@ -842,7 +828,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/qV8WjgYFkjs"
@@ -856,7 +842,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Compatriotas
-							<div class="badge bg-[#f0e3e3]">2003</div>
+							<div class="badge bg-light-wine">2003</div>
 						</h2>
 						<p>Programa de televisión - Canal 7</p>
 						<div class="card-actions justify-end">
@@ -864,7 +850,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/VvVMkSNcgt4"
@@ -878,7 +864,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							85° Aniversario
-							<div class="badge bg-[#f0e3e3]">2004</div>
+							<div class="badge bg-light-wine">2004</div>
 						</h2>
 						<p>Crónica TV</p>
 						<div class="card-actions justify-end">
@@ -886,7 +872,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/Po-kB3zmom0"
@@ -900,7 +886,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Mañanas Informales
-							<div class="badge bg-[#f0e3e3]">2005</div>
+							<div class="badge bg-light-wine">2005</div>
 						</h2>
 						<p>Programa de televisión</p>
 						<div class="card-actions justify-end">
@@ -908,7 +894,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/BCCO0psYnAk"
@@ -929,7 +915,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/NWbOIGzmlcA"
@@ -943,7 +929,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Afectos especiales I
-							<div class="badge bg-[#f0e3e3]">2005</div>
+							<div class="badge bg-light-wine">2005</div>
 						</h2>
 						<p>Programa de televisión - Canal 7</p>
 						<div class="card-actions justify-end">
@@ -951,7 +937,7 @@ import Layout from '../layouts/Layout.astro';
 						</div>
 					</div>
 				</div>
-				<div class="card bg-base-100 w-[22rem] shadow-xl pt-10">
+				<div class="card bg-base-100 w-[18rem] sm:w-[22rem] shadow-xl pt-10">
 					<figure>
 						<iframe
 							    src="https://www.youtube.com/embed/hAV3cTWsXvg"
@@ -965,7 +951,7 @@ import Layout from '../layouts/Layout.astro';
 					<div class="card-body">
 						<h2 class="card-title"> 
 							Afectos especiales II
-							<div class="badge bg-[#f0e3e3]">2006</div>
+							<div class="badge bg-light-wine">2006</div>
 						</h2>
 						<p>Programa de televisión - Canal 7</p>
 						<div class="card-actions justify-end">
@@ -977,35 +963,60 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<!-- teatro -->
-		<div class="px-10 mb-20 py-20 bg-[#F3F4F4]">
+		<div class="px-10 mb-20 py-20 bg-secondary-white">
 
 			<!-- comienzo seccion teatro -->
 			<div class="flex flex-col items-center w-full">
 				<h2 class="font-medium text-4xl text-primary-gray text-center pb-10"> Obras de <span class="text-primary-wine">Teatro</span></h2>
-				<img src="images/teatro.webp" alt="imagen del actor gogo andreu con su hermano bailando" class="mb-10 rounded-lg w-60 md:w-96 ">
+				<img src="images/teatro.webp" alt="imagen del actor gogo andreu con su hermano bailando" class="mb-10 w-60 md:w-96 ">
 			</div>
 			
 			<!-- texto de seccion teatro -->
 			<p class="px-5 sm:px-20 text-primary-gray text-pretty text-center pb-6">El teatro fue el primer amor de Gogo Andreu, y a lo largo de su vida, siempre mantuvo una relación especial con las tablas. Su carrera teatral es testimonio de su profundo respeto por el arte escénico y su habilidad para cautivar a la audiencia en vivo con actuaciones llenas de vida y autenticidad.</p>
 			
-			<p class="px-5 sm:px-20 text-primary-gray text-pretty text-center pb-6">Desde sus inicios en pequeñas producciones locales hasta su participación en grandes escenarios, Andreu demostró un talento innato para el teatro. Su dominio de la actuación en vivo y su capacidad para conectar con el público lo convirtieron en una figura central en la escena teatral argentina. Interpretó una amplia gama de personajes, desde comedias ligeras hasta dramas intensos, siempre con una presencia escénica que dejaba una impresión duradera en quienes lo veían.</p>
+			<p class="px-5 sm:px-20 text-primary-gray text-pretty text-center pb-6">Desde sus inicios en pequeñas producciones locales hasta su participación en grandes escenarios, Andreu demostró un talento innato para el teatro. Podemos destacar entre ellas "Nenucha, la envenenadora de Monsterrat" (1996), "Historia de Variété" (2002), "La risa está servida" (2004), "Arráncame la risa" (2005) y "Alma gemela de mi alma" (2008). Su dominio de la actuación en vivo y su capacidad para conectar con el público lo convirtieron en una figura central en la escena teatral argentina. Interpretó una amplia gama de personajes, desde comedias ligeras hasta dramas intensos, siempre con una presencia escénica que dejaba una impresión duradera en quienes lo veían.</p>
 
 			<p class="px-5 sm:px-20 text-primary-gray text-pretty text-center pb-6">El compromiso de Gogo Andreu con el teatro fue más allá de la actuación. También participó activamente en la dirección y producción de varias obras, aportando su visión artística y su experiencia para crear espectáculos que resonaban tanto con el público como con la crítica.</p>
 		
 			<p class="px-5 sm:px-20 text-primary-gray text-pretty text-center pb-6">Su legado en el teatro argentino es indiscutible, y su influencia se siente aún hoy, inspirando a nuevas generaciones de actores y directores. Para Andreu, el teatro no era solo una profesión, sino una forma de vida, y su pasión por este arte lo acompañó hasta sus últimos días.</p>
 		
-			<!-- <div class="card card-side bg-base-100 shadow-xl">
-				<figure>
-					<img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp" alt="Movie" />
-				</figure>
-				<div class="card-body">
-					<h2 class="card-title">New movie is released!</h2>
-				  	<p>Click the button to watch on Jetflix app.</p>
-				  	<div class="card-actions justify-end">
-				    		<button class="btn btn-primary">Watch</button>
-				  	</div>
+			<div class="flex justify-center pt-10 flex-wrap gap-7" >
+				<div class="card md:card-side bg-base-100 shadow-xl w-full lg:w-4/5">
+					<figure>
+					  	<img
+							src="images/teatro-1.webp" 
+							alt="tapa de obra de teatro Historia de Variété"
+							class="h-96 pt-8 md:pt-0 md:w-full"
+						/>
+					</figure>
+					<div class="card-body md:w-2/3">
+					  	<h2 class="card-title pb-4">Historia de Variété (2002)</h2>
+					  	<p class="md:w-4/5 font-bold">Por su actuación en Historia de Variété, Gogo Andreu recibió el premio ACE Temporada 2001-2002</p>
+					  	<p>Actores: Gogó Andreu, Cutuli y Marcela Paoli.</p>
+						<p>Autoría: Roberto Tito Cossa.</p>
+						<p>Dirección: Salvador Amore.</p>
+						<div class="card-actions justify-end">
+					    		<button class="text-sm bg-secondary-gray uppercase py-2 px-4 text-nowrap rounded-xl hover:bg-light-gray text-white hover:cursor-pointer mt-2"><a href="https://www.youtube.com/watch?v=QAuvPsH_KqA" target="_blank" rel="noopener noreferrer">Ver video</a></button>
+						</div>
+					</div>
 				</div>
-			</div> -->
+				<div class="card md:card-side bg-base-100 shadow-xl w-full lg:w-4/5">
+					<figure>
+					  	<img
+							src="images/teatro-2.webp" 
+							alt="tapa de obra de teatro Historia de Variété"
+							class="h-96 pt-8 md:pt-0 md:w-full"
+						/>
+					</figure>
+					<div class="card-body md:w-2/3">
+					  	<h2 class="card-title pb-5">Alma Gemela de mi alma (2008)</h2>
+					  	<p>Actores: Gogó Andreu, Liliana Vercellini y Manuel Feito.</p>
+						<p>Producción: Dottore Malatesta.</p>
+						<p>Dirección: Marcelo Daniel Bochor.</p>
+						<p>Cielo y Richard, atraídos misteriosamente el uno por el otro, deciden dejar su destino en manos del azar: solo se reencontrarán si ambos obtienen un boleto capicúa. Ángel “Amor” (Gogó Andreu) interviene para lograr la unión de estas almas gemelas.</p>
+					</div>
+				</div>
+			</div>
 		
 		</div>
 
@@ -1019,7 +1030,7 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<!-- carousel de recuerdos (solo imagenes) -->
-		<div class="px-10 pt-20 pb-20 sm:px-20 md:px-32 bg-[#f0e3e3]" id="recuerdos">
+		<div class="px-10 pt-20 pb-20 sm:px-20 md:px-32 bg-light-wine" id="recuerdos">
 			<h2 class="font-medium text-3xl mb-10 text-primary-gray"> Recuerdos <span class="text-primary-wine"> Destacados </span> </h2>
 			<div class="carousel carousel-center rounded-box">
 				<div class="carousel-item">
@@ -1058,26 +1069,26 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<!-- seccion mensajes de amigos y familia -->
-		<div class="bg-[#F3F4F4] px-10 pt-20 pb-10 sm:px-20 md:px-40">
+		<div class="bg-secondary-white px-10 pt-20 pb-10 sm:px-20 md:px-40">
 			<h2 class="font-bold text-3xl text-primary-wine mb-5">Mensajes de Amigos y Familia</h2>
 			<div class="py-8"
-				<p class="w-full md:text-md text-primary-gray">« Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore  sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. »</p>
+				<p class="w-full md:text-md text-primary-gray">« Gogo, tu alegría de vivir fue una de tus cualidades más contagiosas. Nos enseñaste a disfrutar de cada pequeño momento, a reírnos incluso en los días más difíciles, y a siempre encontrar la luz en medio de la oscuridad. Los momentos compartidos contigo están grabados en nuestros corazones, y cada uno de ellos nos recuerda la maravillosa persona que fuiste. Gracias por tu amistad incondicional y por habernos hecho partícipes de tu vida. »</p>
 				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Carmen Castro </p>
 			</div>
 			<div class="py-8"
-				<p class="w-full md:text-md text-primary-gray">« Lorem ipsum adipiscing elit, sed do eiusmod Lorem ipsum adipiscing elit, sed do eiu Lorem Lorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiu ipsum adipiscing elit, sed do eiu tempor incididunt ut labore et dolore magna aliqua. »</p>
+				<p class="w-full md:text-md text-primary-gray">« No solo fuiste un gran artista, sino un ser humano excepcional. En cada proyecto que emprendiste, dejaste una huella imborrable. Te recordamos con profundo amor y admiración, sabiendo que tu legado artístico y personal vivirá por siempre. »</p>
 				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Camila Zapata </p>
 			</div>
 			<div class="py-8"
-				<p class="w-full md:text-md text-primary-gray">« Loremre et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore  sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. »</p>
+				<p class="w-full md:text-md text-primary-gray">« Cada vez que pienso en vos, no puedo evitar sonreír. Fuiste mucho más que un compañero de trabajo; fuiste un amigo, un mentor y una fuente constante de inspiración. Tu humor, tu ingenio y esa calidez humana que irradiabas iluminaban cualquier lugar al que ibas. Gracias por los momentos compartidos, por las lecciones aprendidas y por haber sido un faro de luz en mi vida. Siempre llevaré en mi corazón esos días de risas y camaradería que tanto disfrutamos. »</p>
 				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Emilio Rodriguez Goméz </p>
 			</div>
 			<div class="py-8"
-				<p class="w-full md:text-md text-primary-gray">« Lorem ipsum dolor sit amet, Lorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum Lorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuLorem ipsum adipiscing elit, sed do eiuadipiscing elit, sed do eiuconsectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. »</p>
+				<p class="w-full md:text-md text-primary-gray">« Gogo, estar contigo siempre fue sinónimo de risas y buena compañía. Tu manera de ver la vida, con esa chispa tan especial, nos enseñó a no tomarnos todo tan en serio y a disfrutar del momento. Nos quedamos con todas esas charlas divertidas y las anécdotas que siempre sacaban una sonrisa. Gracias por llenar nuestros días de alegría. Te recordamos con una gran sonrisa en el rostro. »</p>
 				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Familia Ronchetti </p>
 			</div>
 			<div class="py-8"
-				<p class="w-full md:text-md text-primary-gray">« Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore  sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. »</p>
+				<p class="w-full md:text-md text-primary-gray">« Compartir momentos contigo fue un privilegio que nunca olvidaré. Tu sabiduría, humor y generosidad dejaron una marca indeleble en mi vida. Tu recuerdo sigue vivo en cada uno de nosotros, y siempre te llevaremos en el corazón. »</p>
 				<p class="font-bold text-end italic text-lg pr-3 text-primary-gray"> Gloria Colombres </p>
 			</div>
 		</div>

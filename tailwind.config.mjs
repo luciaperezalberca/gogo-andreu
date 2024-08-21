@@ -11,8 +11,12 @@ export default {
 			colors: {
 				'primary-gray': '#343434',
 				'primary-wine': '#821C16',
+				'primary-white': '#F0F0F0',
 				'secondary-gray': '#4C4C4C',
 				'secondary-wine': '#56110D',
+				'secondary-white': '#F3F4F4',
+				'light-gray': '#8F8F8F',
+				'light-wine': '#F0E3E3',
 			},
 		},
 	},
