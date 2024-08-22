@@ -4,8 +4,38 @@ const currentYear = new Date().getFullYear()
 
 <footer class="my-10">
         <div class="flex flex-col justify-center items-center text-primary-gray">
-                <img src="/images/mascaras.png" alt="imagen de mascaras de teatro blanco y negro" class="h-20">
-                <p> &#169; Todos los derechos reservados {currentYear} </p>
-                <a href="" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-50 hover:scale-110"> Acerca del sitio </a>
+            <img src="/images/mascaras.png" alt="imagen de mascaras de teatro blanco y negro" class="h-20">
+            <p> &#169; Todos los derechos reservados {currentYear} </p>
+            <button id="openModal" class="underline hover:opacity-50 hover:scale-110">Acerca del sitio</button>
         </div>
 </footer>
+    
+<!-- Modal -->
+<div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">
+            <h4 class="font-semibold pb-2 text-md text-primary-wine">Este sitio es propiedad de <br> Mónica Andreu y César Andreu.</h4>
+            <p class="font-bold pb-2">Términos y condiciones de uso.</p>
+            <p class="text-sm pb-3"> Se permite la reproducción del contenido de este sitio citando la fuente. No se permite la utilización con fines de lucro. El contenido de esta página está protegido bajo Licencia Creative Commons Atribución-NoComercial-SinDerivadas 3.0 Unported.</p>
+            <p class="text-sm">Diseño y desarrollo del sitio realizado por <a href="mailto:luciaperezalberca@gmail.com" class="underline italic font-semibold hover:font-bold">Lucia Perez Alberca</a></p>
+            <button id="closeModal" class="mt-4 bg-primary-gray text-white py-2 px-4 rounded-lg hover:bg-opacity-80">Cerrar</button>
+        </div>
+</div>
+    
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+                const openModal = document.getElementById('openModal');
+                const closeModal = document.getElementById('closeModal');
+                const modal = document.getElementById('modal');
+    
+                if (openModal && closeModal && modal) {
+                        openModal.addEventListener('click', () => {
+                        modal.classList.remove('hidden');
+                });
+    
+                closeModal.addEventListener('click', () => {
+                        modal.classList.add('hidden');
+                });
+            }
+        });
+</script>
+    
